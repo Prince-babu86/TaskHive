@@ -9,9 +9,9 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 3000,
     proxy:{
-      "/user" :"https://taskhive-backend.onrender.com/",
-      "/Api" :"https://taskhive-backend.onrender.com/",
-      "/task" :"https://taskhive-backend.onrender.com/",
+      "/user" :"https://task-hive-eight.vercel.app/",
+      "/Api" :"https://task-hive-eight.vercel.app/",
+      "/task" :"https://task-hive-eight.vercel.app/",
     }
   },
   plugins: [
