@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-const port = 4000
 const path = require('path')
 const cors = require("cors")
 const indexRouter = require("./Routes/Index")
@@ -8,10 +7,11 @@ const TaskRouter = require("./Routes/Task")
 const UserRouter = require("./Routes/User")
 const db = require("./DB/DbConnection")
 const cookieParser = require('cookie-parser')
+const port = process.env.PORT || 4000
 db()
 
 const corsOptions = {
-    origin: 'http://localhost:5173/', // Specify your frontend domain
+    origin: 'http://localhost:3000/', // Specify your frontend domain
     credentials: true, // Allow cookies to be sent
     allowedHeaders: ['Content-Type', 'Authorization'],
   };
