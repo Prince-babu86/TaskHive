@@ -9,9 +9,15 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 3000,
     proxy:{
+<<<<<<< HEAD
       "/user" :"https://taskhive-backend.onrender.com/",
       "/Api" :"https://taskhive-backend.onrender.com/",
       "/task" :"https://taskhive-backend.onrender.com/",
+=======
+      "/user" :"https://taskhive-backend.onrender.com",
+      "/Api" :"https://taskhive-backend.onrender.com",
+      "/task" :"https://taskhive-backend.onrender.com",
+>>>>>>> ff8450e82de0c7a6f9a4dfdbe91cdb3f2d0ba66a
     }
   },
   plugins: [
