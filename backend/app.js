@@ -11,15 +11,15 @@ const port = process.env.PORT || 4000
 db()
 
 const corsOptions = {
-    origin: 'https://taskhive-frontend.onrender.com/', // Specify your frontend domain
+    origin: 'https://task-hive-ngq4.vercel.app/', // Specify your frontend domain
     credentials: true, // Allow cookies to be sent
     allowedHeaders: ['Content-Type', 'Authorization'],
   };
-  
+
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({ origin: 'https://taskhive-frontend.onrender.com/', credentials: true }));
+app.use(cors({ origin: 'https://task-hive-ngq4.vercel.app/', credentials: true }));
 app.use('/uploads', express.static(path.join(__dirname, 'public', 'uploads')));
 
 
