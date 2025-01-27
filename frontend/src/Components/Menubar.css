@@ -1,0 +1,22 @@
+menu{
+    display: flex;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+menu .m-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+menu .m-item i{
+    font-size: 25px;
+    color: rgb(60, 60, 60);
+}
+
