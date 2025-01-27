@@ -11,7 +11,7 @@ const port = process.env.PORT || 4000
 db()
 
 const corsOptions = {
-    origin: 'http://localhost:3000/', // Specify your frontend domain
+    origin: 'https://taskhive-frontend.onrender.com/', // Specify your frontend domain
     credentials: true, // Allow cookies to be sent
     allowedHeaders: ['Content-Type', 'Authorization'],
   };
@@ -19,7 +19,7 @@ const corsOptions = {
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors({ origin: 'https://taskhive-frontend.onrender.com/', credentials: true }));
 app.use('/uploads', express.static(path.join(__dirname, 'public', 'uploads')));
 
 
